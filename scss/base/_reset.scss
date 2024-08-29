@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(90deg, #fff7ad48, #ffa9f936), url(../multimedia/fundo.png);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 0;
+    text-align: left;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1.2;
+  }

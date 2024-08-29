@@ -1,0 +1,32 @@
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10vw;
+    margin: 0 40px;
+    margin-bottom: 60px;
+    
+    .card{
+        transition: transform 0.3s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+     }
+  
+    .card-body{
+        @include neo(10px, 21px);
+        background-color: beige;
+    }
+    
+    .card-title{
+        color: $marrom-padrao;
+    }
+    
+    .btn-galeria{
+        @include btn($rosa-padrao, $marrom-padrao, $marrom-padrao);
+        &:hover {
+            @include btn-hover($rosa-padrao, $rosa-padrao)
+        }
+    }
+}
+ 

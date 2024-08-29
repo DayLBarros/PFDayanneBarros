@@ -1,0 +1,29 @@
+.depoimentos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 90%;
+    height: 33%;
+    max-width: 1100px;
+    margin: 40px auto;
+    gap: 40px;
+    grid-row: span 2;
+    
+
+    img{
+        border: 5px solid $rosa-padrao;
+        @include neo (50%, 21px);
+    }
+
+    p {
+        @include text ($rosa-padrao, $fonte-padrao, 5px);
+        @include neo (10px, 21px);
+    }
+}
+
+
+.depoimentos{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    width: 100%;    
+}

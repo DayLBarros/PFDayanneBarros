@@ -1,0 +1,58 @@
+.navbar{
+    height: 90px;
+    z-index: 1050; 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+
+    .logo{
+        padding-left: 50px;
+        
+        img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    .custom-btn{
+        @include btn($rosa-padrao, $marrom-padrao, $marrom-padrao);
+        &:hover {
+            @include btn-hover($rosa-padrao, $rosa-padrao);
+        }
+    }
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+    text-align: center;
+
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        font-size: 1.5rem; 
+        margin: 10px 0; 
+        width: 100%; 
+        padding-left: 50px;
+        font-size: 1.1rem; 
+        color: $marrom-padrao !important; 
+        transition: transform 0.3s ease, color 0.3s ease;
+        &:hover{
+            transform: scale(1.1);
+            color: #947504 !important;
+        }
+    }
+}
+
+
+
+
+
+ 
+
