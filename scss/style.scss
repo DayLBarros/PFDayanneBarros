@@ -1,8 +1,9 @@
 //base
 @import "base/vars";
+@import "base/typografy";
 @import "base/utilites";
 @import "base/reset";
-@import "base/typografy";
+
 //components
 @import "components/footer";
 @import "components/galeria";
@@ -11,7 +12,7 @@
 //layout
 @import "layout/encomendas";
 @import "layout/quemsomos";
-@import "layout/reponsive";
+@import "layout/responsive";
 @import "layout/testimonios";
 
 
