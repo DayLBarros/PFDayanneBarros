@@ -46,10 +46,13 @@
 
 @media (max-width: 1024px) {
     .sobre-mim {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: 1fr; 
+        gap: 5vw;
+        padding: 0 5vw;
     }
-    .img-sobremim{
-        width: 100%;
+
+    .text-sobremim {
+        @include text($cor-sobre-mim, $fonte-padrao, 40px); 
     }
     .depoimentos-container {
         grid-template-columns: repeat(2, 1fr); 
