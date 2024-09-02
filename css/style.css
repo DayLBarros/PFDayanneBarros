@@ -76,10 +76,12 @@ h1, h2, h3, h4, h5, h6 {
 .footer-container1 h5 {
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
+  text-align: center;
 }
 .footer-container1 p {
   font-size: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .footer-links {
@@ -305,7 +307,7 @@ iframe {
   padding: 0px 8vw 8vw;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .sobre-mim {
     grid-template-columns: 1fr;
   }
@@ -327,8 +329,12 @@ iframe {
     max-width: 100%;
     margin-bottom: 20px;
   }
+  .footer-container1 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .fullscreen-menu {
     position: fixed;
     top: 0;
@@ -347,7 +353,7 @@ iframe {
     width: 100%;
   }
 }
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .sobre-mim {
     grid-template-columns: 1fr;
     gap: 5vw;
