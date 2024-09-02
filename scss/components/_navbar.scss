@@ -23,6 +23,13 @@
             @include btn-hover($rosa-padrao, $rosa-padrao);
         }
     }
+
+    .navbar-toggler{
+        @include btn($rosa-padrao, $marrom-padrao, $marrom-padrao);
+    }
+    .navbar-toggler-icon{
+        @include btn($rosa-padrao, $marrom-padrao, $marrom-padrao);
+    }
 }
 
 .navbar-nav{
