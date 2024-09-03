@@ -53,21 +53,19 @@
         color: $marrom-padrao;
     }
 
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
     
-    ul li {
-        margin-bottom: 10px;
-        font-size: 1rem;
-        color: $marrom-padrao;
-    }
-    
+
     p {
         margin-bottom: 20px;
         font-size: 0.9rem;
         color: $marrom-padrao;
         
-    }
+    }      
 }
+
+.formadeenvio h5, .perguntasfrequentes h5 {
+    color: $marrom-padrao;
+}
+
+
+
