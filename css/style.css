@@ -260,15 +260,6 @@ h1, h2, h3, h4, h5, h6 {
 .formadeenvio h4, .perguntasfrequentes h4 {
   color: #5b5025;
 }
-.formadeenvio ul, .perguntasfrequentes ul {
-  list-style-type: none;
-  padding: 0;
-}
-.formadeenvio ul li, .perguntasfrequentes ul li {
-  margin-bottom: 10px;
-  font-size: 1rem;
-  color: #5b5025;
-}
 .formadeenvio p, .perguntasfrequentes p {
   margin-bottom: 20px;
   font-size: 0.9rem;
@@ -369,32 +360,20 @@ iframe {
   }
 }
 .depoimentos-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  width: 90%;
-  max-width: 1100px;
-  margin: 40px auto;
-  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10vw;
+  margin: 0 40px;
+  margin-bottom: 60px;
 }
-.depoimentos-container .depoimentos {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  width: 100%;
-}
-.depoimentos-container img {
-  border: 5px solid #febeac;
-  border-radius: 50%;
-  box-shadow: 21px 21px 42px #bebebe, -21px -21px 42px #ffffff;
-  width: 100%;
-  height: auto;
-}
-.depoimentos-container p {
-  background-color: #febeac;
-  font-family: "Varela Round", sans-serif;
-  padding: 14px;
+.depoimentos-container .card {
   border-radius: 10px;
   box-shadow: 21px 21px 42px #bebebe, -21px -21px 42px #ffffff;
+  transition: transform 0.3s ease;
+}
+.depoimentos-container .card:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

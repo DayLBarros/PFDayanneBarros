@@ -1,29 +1,20 @@
 .depoimentos-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10vw;
+    margin: 0 40px;
+    margin-bottom: 60px;
     
-    .depoimentos{
-        display: grid;
-        grid-template-columns: 100px 1fr;
-        width: 100%;    
-    }
-    
-    img{
-        border: 5px solid $rosa-padrao;
-        @include neo (50%, 21px);
-        width: 100%;
-        height: auto;
+    .card{
+        @include neo(10px, 21px);
+        transition: transform 0.3s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+
     }
 
-    p {
-        @include text ($rosa-padrao, $fonte-padrao, 14px);
-        @include neo (10px, 21px);
-    }
+
 }
-
 
